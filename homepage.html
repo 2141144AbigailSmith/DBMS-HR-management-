@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="homepage.css">
+    <script src="homepage.js"></script>
+    <title>AQube Homepage</title>
+</head>
+
+<body>
+    <nav class="menu-container" id="home">
+        <!-- burger menu -->
+        <input id="responsive-menu" type="checkbox" aria-label="Toggle menu"/>
+        <span></span>
+        <span></span>
+        <span></span>
+        <!-- logo -->
+        <a href="#" class="menu-logo">
+            <img id="logo" src="https://cdn-icons-png.flaticon.com/512/929/929288.png?w=740&t=st=1674566720~exp=1674567320~hmac=66db57c1f6e22d6159346729fab857a79988c09f9942bc82a17d03771dd8f329" alt="My Awesome Website"/>
+        </a>
+        <h id="company-name">AQube</h>
+        <!-- menu items -->
+        <div class="menu">
+            <ul>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#home">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#pricing">
+                        Pricing
+                    </a>
+                </li>
+                <li>
+                    <a href="#login">
+                        Login
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <section class="container">
+        <div class="layout">
+          <div class="col col-main" role="main">
+            <div class="centre"> 
+                <h1>
+                    <span><strong id="uppercase">Empowering your workforce, streamlining your HR.</strong></span>
+                </h1>
+                <br>
+                <p>
+                Using HR analytics leads to a <span id="highlight">29%</span> higher chance of better financial performance
+                and a <span id="highlight">15%</span> increase in productivity
+                </p>
+            </div>
+           
+            
+          </div>
+          <div class="col col-complementary" role="complementary">
+            <div class="tabs">
+                <h3 onclick="openTab('about-us')" id="about-tag"><span>About us</span></h3>
+                <h3 onclick="openTab('services')" id="service-tag"><span>Our services</span></h3>
+            </div>
+            <br>
+            <div class="tab" id="about-us">
+            <p>
+                At AQube, we believe that the success of any organization depends on its people.<br>
+                That's why we specialize in providing comprehensive HR management and analytics solutions to
+                help companies attract, retain, and develop top talent.
+            </p>
+            <br>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1h3UV2s2FgmGEJrZGCNJJy9q2NzBnmxwUtsgzm6btIZmbaBSYb1PNE3PShCfy6RjYtcM&usqp=CAU" id="homepage-img" alt="image about teamwork">
+            <br>
+            <p>
+                We offer a wide range of services, including  employee management, performance management, payroll generation etc.<br>
+                We believe that data-driven decision making is essential for success, and we strive to provide our clients with the information they need to make informed decisions about their workforce.              
+            </p>
+            </div>
+            <div class="tab" id="services">
+            <strong>For admins:</strong><br> 
+                <ul>
+                    <li>compare overall performance of company</li>
+                    <li>identify underperforming departments</li>
+                    <li>apply various HR metrics for decision making</li>
+                </ul>
+            <br>
+            <hr>
+            <br>
+            <strong>For managers:</strong><br> 
+            <strong id="small-font">Account managers</strong>
+                <ul>
+                    <li>generate payroll</li>
+                    <li>compute insurane claims</li>
+                </ul>
+            <strong id="small-font">Branch managers</strong>
+                <ul>
+                    <li>compare branch performance with other branches</li>
+                    <li>employee performance analysis - 9box grid</li>
+                    <li>employee demographic analysis</li>
+                </ul>
+            <br>
+            <hr>
+            <br>
+            <strong>For employees:</strong>
+                <ul>
+                    <li>input or update personal information</li>
+                    <li>view leave taken and leave left</li>
+                    <li>view payroll and bonus granted</li>
+                    <li>raise complaints to hr manager</li>
+                </ul>
+            <br>
+          </div>  
+        </div>      
+    </div>
+    </section>  
+    <br> 
+    <hr id="hr-bold">
+    <br>
+    <div class="centre" id="pricing">
+        <h3><span>Our pricing plans</span></h3>
+        <br>
+        <div class="row">
+        <h3>For Employees</h3> 
+        <div id="pricetag">$60</div>
+        </div>
+        <table>
+            <tr>
+              <th>Features</th>
+              <th>Basic</th>
+              <th>Pro</th>
+            </tr>
+            <tr>
+              <td>View employee details</td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-check"></i></td>
+            </tr>
+            <tr>
+              <td>View payroll</td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-check"></i></td>
+            </tr>
+            <tr>
+              <td>Past performance analysis</td>
+              <td><i class="fa fa-remove"></i></td>
+              <td><i class="fa fa-check"></i></td>
+            </tr>
+          </table>
+          <br><br>
+          <div class="row">
+          <h3>For Managers</h3>
+          <div id="pricetag">$100</div>
+         </div>
+          <table>
+              <tr>
+                <th>Features</th>
+                <th>Basic</th>
+                <th>Pro</th>
+              </tr>
+              <tr>
+                <td>View respective department performance</td>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+              </tr>
+              <tr>
+                <td>View employee data</td>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+              </tr>
+              <tr>
+                    <td>Generate payroll</td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+              </tr>
+                <td>Department performance metrics</td>
+                <td><i class="fa fa-remove"></i></td>
+                <td><i class="fa fa-check"></i></td>
+              </tr>
+            </table>
+            <br><br>
+            <div class="row">
+            <h3>For Admins</h3>
+            <div id="pricetag">$140</div>
+            </div>
+            <table>
+                <tr>
+                  <th>Features</th>
+                  <th>Basic</th>
+                  <th>Pro</th>
+                </tr>
+                <tr>
+                  <td>View overall company data</td>
+                  <td><i class="fa fa-check"></i></td>
+                  <td><i class="fa fa-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Employee performance metrics</td>
+                  <td><i class="fa fa-remove"></i></td>
+                  <td><i class="fa fa-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Revenue generation metrics</td>
+                  <td><i class="fa fa-remove"></i></td>
+                  <td><i class="fa fa-check"></i></td>
+                </tr>
+                <tr>
+                    <td>Attrition and churn rate analysis</td>
+                    <td><i class="fa fa-remove"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                  </tr>
+              </table>
+              <br>
+              <div class="row">
+                <h3>Combo pack</h3>
+                <div id="pricetag">$260</div>
+              </div>
+              <p style="color: var(--h)">Includes all 3 user modules and analytics metrics</p>
+              <br>
+    </div>
+    <div class="up">
+        <a class="fa fa-arrow-up" href="#home"></a>
+    </div>
+</body>
+</html>
