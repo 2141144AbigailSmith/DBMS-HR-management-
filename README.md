@@ -28,10 +28,12 @@ HR management and analytcis application.
  2. past performance module:
     2.1 employee progress chart 
     2.2 9box grid analysis 
+    
 3.  Employee revenue generation module:
     3.1 revenue per employee 
     3.2 employee utilization metric 
     3.3 diversity portfolio 
+    
 B. Leave module 
 C. Insurance module 
 D. project management module 
