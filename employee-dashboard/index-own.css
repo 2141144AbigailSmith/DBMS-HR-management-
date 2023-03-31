@@ -1,0 +1,110 @@
+#logo {
+    height: 45px;
+    width: auto;
+}
+#full-width {
+    max-width: 90%;
+}
+.payroll {
+    height: auto;
+    padding: 10px;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    
+}
+.custom-chart {
+    width: 100vw;
+}
+@media screen and (max-width: 600px) {
+    .payroll {
+        width: 80vw;
+    }
+}
+.table-resp {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
+    border: 1px solid lightgray;
+}
+th {
+    padding: 15px;
+    text-align: left;
+    color: white;
+}
+td {
+    padding: 10px;
+    text-transform: capitalize;
+}
+tr {
+    border-bottom: 1px solid lightgrey;
+   
+}
+tr:nth-last-child(1)
+{
+    color: white;
+}
+.heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+#complaint-status {
+    padding: 15px;
+    width: 100px;
+    height: 80px;
+    border-radius: 15px;
+    background-color: black;
+}
+  
+  .complaint-btn {
+    border: 0 !important;
+    outline: 0 !important;
+    text-transform: capitalize;
+    width: 200px;
+    border-radius: 15px;
+    padding: 5px 8px;
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .owncontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+  }
+  
+  .owncontainer>.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+  }
+  
+  .owncontainer>.row>.col {
+    flex-basis: calc(33.33% - 10px);
+    margin-bottom: 20px;
+    padding: 10px;
+    border-right: 1.5px solid white;
+    background-color: #36b9cc;
+    color: white;
+  }
+  #dependents-container>.row>.col {
+    background-color: #f6c23e;
+    color: #1f1f1f;
+  }
+  @media only screen and (max-width: 768px) {
+    .owncontainer>.col {
+      flex-basis: calc(50% - 10px);
+    }
+  }
+
+  #complaints-div p{
+    color: black;
+    font-size: 0.9rem;
+    line-height: 0.9;
+  }
+  
