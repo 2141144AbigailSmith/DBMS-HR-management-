@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Complaint Form</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--success);
+    }
+    form>h2 {
+        text-align: center;
+        margin: 0 auto;
+        color: black;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items:flex-start;
+      justify-content: space-evenly;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      width: 50%;
+      max-width: 500px;
+      margin: auto;
+      background-color: var(--light);
+    }
+    @media screen and (max-width: 600px) 
+    {
+        form {
+            min-width: 80vw;
+        }
+    }
+    input[type="date"],input[type="text"], select, textarea {
+      margin-bottom: 20px;
+      font-size: 16px;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      width: 90%;
+      box-sizing: border-box;
+      margin: 0 auto;
+    }
+
+    textarea {
+        margin-bottom: 5px;
+    }
+    
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      margin: 0 auto;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #3e8e41;
+    }
+
+    label {
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <form id="complaintForm" method="post" action="postComplaint.php">
+    <h2>Complaint Form</h2>
+    <label for="id">Employee Id</label>
+    <input type="text" id="id" name="eid" required>
+   
+    <label for="date">Date of Issue:</label>
+    <input type="date" id="date" name="issuedate" min="2023-01-01" max="2023-12-31" required>
+   
+    <label for="complaint-type">Complaint Type:</label>
+    <select id="complaint-type" name="complaint-type" required>
+      <option value="">Select complaint type</option>
+      <option value="remuneration">Remuneration</option>
+      <option value="technical">Technical</option>
+      <option value="work-environment">Work Environment</option>
+      <option value="harassment">Harassment</option>
+      <option value="others">Others</option>
+      <option value="none">None</option>
+    </select>
+   
+    <label for="additional-comments">Additional Comments:</label>
+    <textarea id="additional-comments" name="additional-comments" rows="3" cols="50"></textarea>
+
+    <input type="submit" value="Send">
+  </form>
+</body>
+</html>

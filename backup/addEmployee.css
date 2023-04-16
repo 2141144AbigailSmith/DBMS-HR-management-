@@ -1,0 +1,81 @@
+.employee-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    line-height: 1;
+}
+
+form>label {
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: -2px;
+    margin-left: 7px;
+}
+
+.rows {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 20px;
+    padding: 8px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+form>h2 {
+    text-align: center;
+    margin: 0 auto;
+    color: black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    form {
+        min-width: 80vw;
+    }
+}
+
+form>input[type="date"],
+form>input[type="text"],
+form>input[type="email"],
+form>input[type="tel"],
+form>select,
+form>textarea {
+    margin-bottom: 20px;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 90%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-radius: 3px;
+}
+
+form>select option {
+    color: gray;
+}
+form>input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+form>input[type="submit"]:hover {
+    background-color: #3e8e41;
+}

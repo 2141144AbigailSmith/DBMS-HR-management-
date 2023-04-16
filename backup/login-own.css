@@ -1,0 +1,20 @@
+.col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#usernameWarning, #passwordWarning {
+    text-align: left;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 10px;
+    width: 90%;
+    color: #e74a3b;
+}
+.input-warning {
+    border: 2px solid #e74a3b;   
+}
+.success {
+    border: 2px solid #1cc88a;
+}
